@@ -63,3 +63,18 @@ a.internal:link { color: #4A96AD!important; }
 a.internal:visited { color: #4A96AD!important; }
 a.internal:active { color: #4A96AD !important; }
 a.internal:hover { color: #4A96AD !important; text-decoration: none; }
+
+.circle {
+  display: block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+
+    -moz-border-radius: 50px; /* or 50% */
+    border-radius: 50px; /* or 50% */
+
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+  }
