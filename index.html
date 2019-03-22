@@ -115,6 +115,26 @@
         <b>Academic Keynote: Ce Zhang (ETH Zürich)</b>
         <p style="text-align: justify">
 <img src="images/ce-face.jpg" style="margin-top: 5px; margin-right: 20px;" class="circle" align="left" /> <a href="https://ds3lab.org/people/czhang.html" target="_blank">Ce Zhang</a> is an Assistant Professor in Computer Science at ETH Zurich. He believes that by making data—along with the processing of data—easily accessible to non-CS users, we have the potential to make the world a better place. His current research focuses on building data systems to support machine learning and help facilitate other sciences. Before joining ETH, Ce was advised by Christopher Ré. He finished his PhD round-tripping between the University of Wisconsin-Madison and Stanford University, and spent another year as a postdoctoral researcher at Stanford. His PhD work produced DeepDive, a trained data system for automatic knowledge-base construction. He participated in the research efforts that won the SIGMOD Best Paper Award (2014) and SIGMOD Research Highlight Award (2015), and was featured in special issues including the Science magazine (2017), the Communications of the ACM (2017), “Best of VLDB” (2015), and the Nature magazine (2015).</p>
+
+
+<b><i>"Software Engineering 2.0" for "Software 2.0": Towards Data Management for Statistical Generalization</i></b>
+<p style="text-align: justify">
+When training a machine learning model becomes fast, and model selection and hyper-parameter tuning become
+automatic, will non-CS experts finally have the tool they need to build ML applications all by themselves? In this talk,
+I will focus on those users who are still struggling -- not because of the speed and the lack of automation of an ML system,
+but because it is so powerful that it is easily misused as an "overfitting machine." For many of these users, the quality
+of their ML applications might actually decrease with these powerful tools without proper guidelines and feedback (like what
+"software engineering" provides for traditional software development).<br/>
+
+In particular, I will talk about two systems, <i>ease.ml/ci</i> and <i>ease.ml/meter</i>, which we built as an early attempt at an ML system that tries to enforce the right user behavior during the development process of ML applications. The first, <i>ease.ml/ci</i>,
+is a "continuous integration engine" for ML that gives developers a pass/fail signal for each developed ML model depending
+on whether they satisfy certain predefined properties over the (unknown) "true distribution". The second, <i>ease.ml/meter</i>,
+is a system that continuously returns some notion of the "degree of overfitting" to the developer. The core technical
+challenge is how to answer adaptive statistical queries in a rigorous but practical (in terms of label complexity) way.
+Interestingly, both systems can be seen as a new type of data management system which, instead of managing the
+(relational) querying of the data, manages the statistical generalization power of the data.  
+</p>
+
         <br/>   
 
         <b>Industry Keynote: Leonidas Galanis (Facebook)</b>
@@ -122,7 +142,7 @@
 <img src="images/leonidas-face.jpg" style="margin-top: 5px; margin-right: 20px;" class="circle" align="left" /> <a href="https://scholar.google.com/citations?hl=en&user=CFIMnukAAAAJ&view_op=list_works" target="_blank">Leonidas Galanis</a> is an Engineering Manager at Facebook where he supports the distributed training platform team in Facebook's Artificial Intelligence Infrastructure organization. Prior to that, he was managing the RocksDB and MySQL Software Engineering teams, and built the engineering team that delivered the MyRocks server that is used to store the Facebook social graph and Facebook messenger data (among other data). Before his time at Facebook, he was a Director at Oracle, where he was responsible for the diagnostic & tuning pack and the real application testing option of the Oracle relational database. In 2004, he got his Ph.D. in databases from the University of Wisconsin-Madison.
 </p>
 
-<i>Distributed Training of Deep Learning Models for Recommendation Systems</i>
+<b><i>Distributed Training of Deep Learning Models for Recommendation Systems</i></b>
 <p style="text-align: justify">
 Machine learning results have been increasingly impressive over the last years with many successful real world applications. Deep learning, in particular, has enabled major breakthroughs. For example, image classification can now achieve better results than humans. At Facebook the need for faster training of deep learning models with larger amounts of data is growing. At the same time the use of existing hardware resources as they are available is essential. We are addressing the aforementioned challenges with distributed training. This presentation provides an overview of distributed training at Facebook. There are challenges in reading training data, interacting with model artifacts and training checkpoints during the often very long process of offline training. Moving and reconfiguring model data through the various training stages (offline, model warmup and online training) while scaling the model size beyond what can fit into a single host presents several problems. Devising distributed optimization algorithms that allow us to use increasingly more trainers in order to reduce the time of training as well as leverage existing resources opportunistically is a very active research area.  
 </p>
@@ -200,7 +220,7 @@ Machine learning results have been increasingly impressive over the last years w
           <li><a href="http://asterios.katsifodimos.com/" target="_blank">Asterios Katsifodimos</a> (TU Delft)</li>
           <li><a href="https://www.linkedin.com/in/johannes-kirschnick-9a81466/" target="_blank">Johannes Kirschnick</a> (Amazon)</li>         
           <li><a href="https://cseweb.ucsd.edu/~arunkk/" target="_blank">Arun Kumar</a> (UC San Diego)</li>
-          <li><a href="http://www.user.tu-berlin.de/akunft/" target="_blank">Andreas Kunft</a> (TU Berlin)</li>
+          <li><a href="http://www.user.tu-berlin.de/akunft/z" target="_blank">Andreas Kunft</a> (TU Berlin)</li>
           <li><a href="http://nantiamakrynioti.com/" target="_blank">Nantia Makrynioti</a> (Athens University of Economics and Business)</li>
           <li><a href="http://www.hpi.de/naumann/" target="_blank">Felix Naumann</a> (HPI Potsdam)</li>
           <li><a href="https://www.dima.tu-berlin.de/menue/team/dr_tilmann_rabl/" target="_blank">Tilmann Rabl</a> (TU Berlin)</li>
